@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import styled from 'styled-components';
 
@@ -10,7 +10,7 @@ const Navigation = () => (
           <Link to='/'>Home</Link>
         </li>
         <li>
-          <Link to='/decks'>Decks</Link>
+          <NavLink to='/cards' activeClassName="active">Decks</NavLink>
         </li>
         <li>Lorem</li>
         <li>Lorem</li>
@@ -34,6 +34,15 @@ const LinkList = styled.ul `
     margin-left: 1em;
     &:first-child {
       margin-left: 0;
+    }
+    & a {
+      text-decoration: none;
+      &:visited {
+        color: white;
+      }
+      &.active {
+        color: forestgreen;
+      }
     }
   }
 `
