@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Decks from './components/Decks';
+import CardsPage from './components/CardsPage';
 import Navigation from './components/Navigation';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
         <Navigation />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/decks' component={Decks} />
+          <Route path='/cards' component={CardsPage} />
         </Switch>
       </div>
     );
