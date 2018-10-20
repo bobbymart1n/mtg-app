@@ -8,12 +8,15 @@ class CardsPage extends Component {
     return (
       <Subscribe to={[Cards]}>
         {cardsList => (
-          <CardsContainer>
+          <div>
+          {!cardsList.state.cards && (
             <GetCardsButton
               type="button"
               onClick={cardsList.handleGettingCards}>
               Click me
             </GetCardsButton>
+          )}
+          <CardsContainer>
             {cardsList.state.cards && (
               cardsList.state.cards.map(({imageUrl, name, id}) =>
                 <Card key={id}>
@@ -22,6 +25,7 @@ class CardsPage extends Component {
               )
             )}
           </CardsContainer>
+          </div>
         )}
       </Subscribe>
     )
@@ -34,7 +38,14 @@ const CardsContainer = styled.div `
   margin: auto;
 `
 const GetCardsButton = styled.button `
-  flex: 0 1 100%;
+  width: 100%;
+  max-width: 120px;
+  height: 35px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  background-color: steelblue;
 `
 const Card = styled.div `
   margin: 0 1em;
