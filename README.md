@@ -12,7 +12,7 @@ This is just a project I wanted to build because I've recently become obsessed w
 
 ## Tech
 * React
-* Redux(for state management)
+* Unstated(a wrapper for Reacts Context API for state management)
 * Redux Thunks
 * Styled Components
 
