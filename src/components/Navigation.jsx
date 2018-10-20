@@ -12,7 +12,9 @@ const Navigation = () => (
         <li>
           <NavLink to='/cards' activeClassName="active">Decks</NavLink>
         </li>
-        <li>Lorem</li>
+        <li>
+          <NavLink to='/sets' activeClassName="active">Sets</NavLink>
+        </li>
         <li>Lorem</li>
       </LinkList>
   </Nav>
