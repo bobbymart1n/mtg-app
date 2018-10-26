@@ -1,4 +1,4 @@
-# MTG Deck Builder and Posting App
+# MTG Event/Social Gathering App
 **By Bobby Martin 10.19.18**
 
 ## Description
