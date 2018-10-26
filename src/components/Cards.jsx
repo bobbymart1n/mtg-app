@@ -8,9 +8,9 @@ class Cards extends Container<CardState> {
     this.setState({...data});
   }
   handleGettingSet = async (set) => {
-    const response = await fetch(`https://api.magicthegathering.io/v1/sets/${set}`);
+    const response = await fetch(`https://api.magicthegathering.io/v1/sets/${set}/booster`);
     const data = await response.json();
-    console.log(data)
+    this.setState({...data})
   }
 }
 
