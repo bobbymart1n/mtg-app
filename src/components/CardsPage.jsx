@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Subscribe } from 'unstated';
 import styled from 'styled-components';
-import Cards from './Cards';
+import Cards from './../containers/Cards';
 
 class CardsPage extends Component {
   render() {
