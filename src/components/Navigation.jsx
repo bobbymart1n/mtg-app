@@ -10,12 +10,13 @@ const Navigation = () => (
           <Link to='/'>Home</Link>
         </li>
         <li>
-          <NavLink to='/cards' activeClassName="active">Decks</NavLink>
+          <NavLink to='/cards' activeClassName="active">
+            <strong>Start a new Event</strong>
+          </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to='/sets' activeClassName="active">Sets</NavLink>
-        </li>
-        <li>Lorem</li>
+        </li> */}
       </LinkList>
   </Nav>
 );
@@ -31,9 +32,11 @@ const Nav = styled.nav `
 const LinkList = styled.ul `
   list-style: none;
   margin: 0;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   & li {
-    margin-left: 1em;
+    margin: 0 1em;
     &:first-child {
       margin-left: 0;
     }
