@@ -4,6 +4,8 @@
 ## Description
 This is just a project I wanted to build because I've recently become obsessed with MTG Arena. It uses the free MTG API to get data on cards. The idea behind it is just to build something that I can use the HTML Drag and Drop API with and also build something where people can easily make decks. Some future plans might be to build a custom back-end to store users decks, but thats further down the road.
 
+### Discovery and Idea
+
 ## Setup
 * Clone this repo
 * Run `npm install` to install all dependencies
@@ -13,7 +15,6 @@ This is just a project I wanted to build because I've recently become obsessed w
 ## Tech
 * React
 * Unstated(a wrapper for Reacts Context API for state management)
-* Redux Thunks
 * Styled Components
 
 This repo uses the **_MIT License_**
